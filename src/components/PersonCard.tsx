@@ -47,8 +47,8 @@ const PersonCard: FC<IPropsPersonCard> = ({ person }) => {
         <Card onClick={openFullCard}>
             <Image src={person.image} alt={person.name} />
             <Title>{person.name}</Title>
-            <Text>Status: {person.status}</Text>
-            <Text>Gender: {person.gender}</Text>
+            <Text><strong>Status:</strong> {person.status}</Text>
+            <Text><strong>Gender:</strong> {person.gender}</Text>
         </Card>
     );
 };

@@ -82,10 +82,10 @@ const PersonFullCard = () => {
                 >
                     <Image src={personFullCard.image} alt={personFullCard.name} />
                     <Title>{personFullCard.name}</Title>
-                    <Text>Gender: {personFullCard.gender}</Text>
-                    <Text>Species: {personFullCard.species}</Text>
-                    <Text>Status: {personFullCard.status}</Text>
-                    <Text>Location: {personFullCard.location.name}</Text>
+                    <Text><strong>Gender:</strong> {personFullCard.gender}</Text>
+                    <Text><strong>Species:</strong> {personFullCard.species}</Text>
+                    <Text><strong>Status:</strong> {personFullCard.status}</Text>
+                    <Text><strong>Location:</strong> {personFullCard.location.name}</Text>
                 </Card>
             </Modal>
         );
