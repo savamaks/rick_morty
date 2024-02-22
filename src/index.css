@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -33,7 +39,7 @@ h1 {
     font-size: 3.2em;
     line-height: 1.1;
 }
-p{
+p {
     margin: 0;
 }
 button {
@@ -45,14 +51,15 @@ button {
     font-family: inherit;
     background-color: #1a1a1a;
     cursor: pointer;
-    transition: border-color 0.25s;
+    transition: all 0.25s;
 }
 button:hover {
+    color: #646cff;
     border-color: #646cff;
 }
 button:disabled {
-  cursor:default;
-  border: none;
+    cursor: default;
+    border: none;
 }
 button:focus,
 button:focus-visible {
@@ -62,13 +69,12 @@ button:focus-visible {
     h1 {
         font-size: 2.5em;
     }
-    h2{
+    h2 {
         font-size: 18px;
     }
-    h3{
+    h3 {
         font-size: 15px;
     }
-
 }
 @media (prefers-color-scheme: light) {
     :root {

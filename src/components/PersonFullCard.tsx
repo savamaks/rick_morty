@@ -1,9 +1,17 @@
 import { MouseEvent } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { changePesronFullCard } from "../reducer/appSlice";
 import { useAppDispatch, useAppSelector } from "../reducer/store";
 import close from "/krestik.svg";
 
+const transform = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
 const Modal = styled.section`
     width: 100vw;
     height: 100vh;
@@ -15,6 +23,8 @@ const Modal = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: ${transform} 0.3s ease;
+
 `;
 const CloseButton = styled.button`
     position: absolute;
@@ -43,6 +53,7 @@ const Card = styled.div`
         background: #f2f2f2;
     }
 `;
+
 const Image = styled.img``;
 
 const Title = styled.h2``;

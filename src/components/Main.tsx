@@ -26,7 +26,7 @@ const Container = styled.section`
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
-
+    position: relative;
     gap: 20px;
 `;
 const Box = styled.div`
@@ -40,16 +40,26 @@ const Box = styled.div`
         justify-content: center;
     }
 `;
-const Button = styled.button``;
+const Button = styled.button`
+    background: inherit;
+    border: 1px solid #d2d2d2;
+`;
 
 const Input = styled.input`
+    color: #d2d2d2;
     padding: 5px 10px;
     border-radius: 5px;
     min-width: 200px;
     font-size: 16px;
+    background: inherit;
     border: 1px solid #d2d2d2;
+
     @media (max-width: 860px) {
         width: 95%;
+    }
+    @media (prefers-color-scheme: light) {
+        border-color: #f2f2f2;
+        color: #213547;
     }
 `;
 function App() {
@@ -103,7 +113,6 @@ function App() {
 
             <Container>
                 {dataPersons.ids.map((id: EntityId, index: number) => {
-
                     const check = checkName(search, dataPersons.entities[id].name);
 
                     if (status !== dataPersons.entities[id].status && status !== "All") return;

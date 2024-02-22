@@ -15,7 +15,7 @@ const Card = styled.div`
     overflow: hidden;
     align-self: stretch;
     align-items: center;
-
+    box-shadow: 3px 3px 6px #b8b8b857;
     &:hover {
         transform: scale(1.02);
     }
