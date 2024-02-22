@@ -43,6 +43,9 @@ const Box = styled.div`
 const Button = styled.button`
     background: inherit;
     border: 1px solid #d2d2d2;
+    @media (prefers-color-scheme: light) {
+        border-color: #213547;
+    }
 `;
 
 const Input = styled.input`

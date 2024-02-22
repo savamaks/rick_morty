@@ -212,6 +212,9 @@ Error generating stack: `+i.message+`
 `,L1=Q.button`
     background: inherit;
     border: 1px solid #d2d2d2;
+    @media (prefers-color-scheme: light) {
+        border-color: #213547;
+    }
 `,F1=Q.input`
     color: #d2d2d2;
     padding: 5px 10px;
