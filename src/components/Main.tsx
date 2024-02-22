@@ -86,7 +86,6 @@ function App() {
             <Container>
                 {dataPersons.ids.map((id: EntityId, index: number) => {
                     
-                    console.log(dataPersons.entities);
                     if (status !== dataPersons.entities[id].status && status !== "All") return;
                     if (gender !== dataPersons.entities[id].gender && gender !== "All") return;
                     if (species !== dataPersons.entities[id].species && species !== "All") return;
